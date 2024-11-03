@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+
+\draw  (0,0.5) node (v1) {} circle (2);
+\draw  (0,2) ellipse (1 and 0.5);
+\draw [dashed] (0,-1) ellipse (1 and 0.5);
+\draw[dashed]  (-1,2) node (v2) {} -- (-1,-1);
+\draw[dashed]  (1,2) -- (1,-1);
+\draw [thick, brown](v1.center) -- (2,0.5) node [midway, above]{$R$};
+\draw [thick, orange] (0,0) -- (-1,0)node [midway, below]{$a$};
+\draw [dashed,->] (0,-2) -- (0,3.5);
+\node at (-0.5,3.5) {Z};
+\draw [thick, purple](v1.center) -- (v2.center);
+\draw [thick, purple](-0.5534,1.3329) arc (123.6011:88.8:1)node [midway, above]{$\theta_0$};
+\end{tikzpicture}

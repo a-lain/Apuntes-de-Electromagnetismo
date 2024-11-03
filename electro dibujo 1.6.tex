@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+
+\draw  [thick,blue](-2.5,3) node (v1) {} ellipse (2.5 and 0.5);
+\draw  [thick,blue](-2.5,-2) ellipse (2.5 and 0.5);
+\draw [thick,blue](-5,3) -- (-5,-2);
+\draw [thick,blue](0,3) node (v2) {} -- (0,-2);
+\draw (-2.5,5.5) -- (-2.5,-4.5);
+\draw [orange](v1.center) -- (v2.center) node [midway, above, scale =3, orange]{$r$};
+\end{tikzpicture}

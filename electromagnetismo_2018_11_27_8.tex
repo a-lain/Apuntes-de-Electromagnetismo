@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+\draw [<->, thick](-1,1.5) -- (-1,-1) node (v1) {} -- (1.5,-1);
+\draw [->, thick](v1.center) -- (-2,-2);
+\draw [->, green] (v1.center) -- (2.8,3) node [midway,above left]{$\vec{R}'$};
+\draw [->, orange](v1.center) -- (4.1,0.8) node [midway,below]{$\vec{R}$};
+\draw [->, blue](2.8,3) -- (4.1,0.8) node [midway,above]{$\vec{r}$};
+\draw  plot[smooth, tension=.7] coordinates {(1.5,3.5) (0.5,3) (1,2) (3,2) (2.5,3.5) (1.5,3.5)};
+\draw[very thick, ->, purple] (1.4165,3.4771) -- (2.0723,3.6354) node[midway, above]{$I$};
+\draw [ultra thick, red] (2.7506,3.1831) -- (2.8976,2.8666) node[midway, right]{$dl$};
+
+\end{tikzpicture}

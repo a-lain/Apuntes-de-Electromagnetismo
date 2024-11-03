@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+
+\draw  (-0.5,0.5) node (v1) {} ellipse (1.5 and 0.5);
+\draw  [fill](1,4.5) node (v2) {} circle (0.07);
+\draw [->, thick, blue](v1.center) -- (-0.5,1.5)node [midway, right]{$d\vec{S}$};
+\draw [orange](-0.5,0.5) -- (0.1426,0.0488)node [midway, left]{$a$};
+\draw[->, thick, purple]  plot[smooth, tension=.7] coordinates {(-1.7441,0.7794) (-1.9239,0.6595) (-1.9718,0.4318) (-1.8041,0.2641)};
+\node at (-2.1896,0.5157)[purple] {$I$};
+\draw [dashed] (-1.9672,0.5517) -- (v2);
+\draw [dashed](0.9807,0.5199) -- (v2);
+\end{tikzpicture}

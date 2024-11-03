@@ -1,0 +1,14 @@
+- Probar propiedades del desarollo multipolar. HECHO
+- Proposición 59: poner símbolos de aproximación. HECHO
+- Falta prima sobre rotacional en demostración de la proposición 60. HECHO
+- En la misma demostración, cambiar "producto escalar" por "producto vectorial". HECHO
+- En la demostración de la proposición 63 sobra algún "Como". HECHO
+- En la misma demostración, falta un "-" en una fórmula con el gradiente de psi. HECHO
+- Definición 58, medio isótropo no es eso. \vec{M}\parallel\vec{H}. También estaba mal la "\sigma", cambiada por una "\phi". HECHO
+- Añadir observación para fórmulas D=\epsilon E y B = \mu H. Establecer que sólo son válidas en caso de imanación NO permanente.
+        - Cambiada definición 26, proposición 30, definición 57, definición 61. HECHO
+- Mencionar idea Pillbox en la demostración de la proposición 64. HECHO
+- En la demostración de la cuarta ecuación de Maxwell lo que tiene que ser cero es rotY, no Y. HECHO
+
+--- TRAS AÑADIR IDEAS DE ANÁLISIS ---
+- Revisar propiedades del desarrollo multipolar y aplicar cambio de variable para las demostraciones haciendo una partición del dominio.

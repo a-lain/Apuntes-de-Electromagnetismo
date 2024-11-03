@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+\draw  (0,0) circle (1.5);
+\draw (0,0) node (v1) {};
+\draw [brown] (v1.center) -- (-1.5,0)node [midway, below]{$R$};
+\draw [->, thick, orange](1.062,1.0416) node (v2) {} -- (0.462,0.4416);
+\node at (-0.9,0.5) {$\mu_0$};
+\draw [->, thick, purple](v2.center) -- (1.062,1.8416)node [midway, above left]{$\vec{M}$};
+\draw [dashed](v1.center) -- (1.7,1.7);
+\draw [green](1.0686,1.599) arc (93.6006:45.6:0.5)node [midway, above]{$\theta$};
+\draw [blue](1.0582,1.4982) arc (94.796:219.6:0.5)node [midway, left]{$\theta-\frac{\pi }{2}$};
+\draw [dashed](v1) -- (0,1.5);
+\draw [green](0.0168,0.3996) arc (87.5926:48:0.4)node [midway, above]{$\theta$};
+\draw [->, thick, teal](v1.center) -- (0.4,-0.4)node [midway, below right]{$d\vec{B}$};
+\draw  (1.9,0.9) node (v3) {} circle (0.3);
+\draw [fill]  (v3) circle (0.1);
+\draw  (-1.9,0.9) circle (0.3);
+\draw (-2.1,1.1) -- (-1.7,0.7) (-1.7,1.1) -- (-2.1,0.7);
+\node [orange] at (0.9,0.6) {$\hat{n}$};
+\end{tikzpicture}

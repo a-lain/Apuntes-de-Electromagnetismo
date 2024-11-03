@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+
+\draw (-1.5,2.5) -- (-1.5,-1.5) node (v1) {};
+\node at (-1.2,-1.5) {$q_1$};
+\node at (-1.2,-0.9) {$q_2$};
+\node at (-1.2,2.4) {$q_n$};
+\node at (-1.2,-0.3) {$q_3$};
+\draw [dashed](-1.2,0) -- (-1.2,2.1);
+\node at (0,-1.5) {$z_1$};
+\node at (0,-0.9) {$z_2$};
+\node at (0,-0.3) {$z_3$};
+\node at (0,2.4) {$z_n$};
+\draw [dashed](0,0) -- (0,2);
+\draw [->](-1,-1.5) -- (-0.5,-1.5);
+\draw [->](-1,-0.9) -- (-0.5,-0.9);
+\draw [->](-1,-0.3) -- (-0.5,-0.3);
+\draw [->](-1,2.4) -- (-0.5,2.4);
+\draw  [fill](v1) circle (0.1);
+\draw  [fill](-1.5,-0.9) circle (0.1);
+\draw  [fill](-1.5,-0.3) circle (0.1);
+\draw  [fill](-1.5,2.3) circle (0.1);
+\end{tikzpicture}

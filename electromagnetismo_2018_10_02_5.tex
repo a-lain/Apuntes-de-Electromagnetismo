@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\draw [<->, thick](-1,1.5) -- (-1,-1) node (v1) {} -- (1.5,-1);
+\draw [->, thick](v1.center) -- (-2,-2);
+\draw [->, green] (v1.center) -- (1,1.8) node [midway,above left]{$\vec{R}'$};
+\draw [->, orange](v1.center) -- (3,0.9) node (v4) {};
+\node at (0.2,1.7) [scale=0.8]{$(x',y',z')$};
+\node at (3.5,0.9) [scale=0.8]{$(x,y,z)$};
+\draw [->, blue](1,1.8) -- (v4.center) node [midway,above]{$\vec{r}$};
+\node at (1.5,0) [orange]{$\vec{R}$};
+\node at (-2.2,-1.7) {X};
+\node at (1.5,-1.3) {Y};
+\node at (-1.1,1.7) {Z};
+\node at (1,2.4) {$\vec{p}$};
+\end{tikzpicture}

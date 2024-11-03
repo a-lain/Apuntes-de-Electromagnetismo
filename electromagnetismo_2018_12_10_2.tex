@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+
+\draw  (0,0) circle (1.5);
+\draw (0,0) node (v1) {};
+\draw [brown] (v1.center) -- (-1.5,0) node [midway, below]{$R$};
+\draw [->, thick, orange](1,1.1) node (v2) {} -- (0.4,0.5);
+\node at (-0.2,0.9) {$\mu_0$};
+\draw [->, thick, purple](v2.center) -- (1,1.9) node [midway, left]{$\vec{M}$};
+\node at (0.9,0.7) [orange] {$\hat{n}$};
+\draw [dashed, orange] (v2.center) -- (1.6,1.7);
+\draw [green] (0.9826,1.5997) arc (91.9943:46:0.5) node [midway, above right = -2] {$\theta$};
+\end{tikzpicture}

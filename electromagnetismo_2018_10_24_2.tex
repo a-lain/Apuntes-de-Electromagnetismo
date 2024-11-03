@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+\draw [thick] (0,0.6) ellipse (1.2 and 0.2);
+\draw [fill, orange] (0,1) ellipse (1.2 and 0.2);
+\draw (-1.8,1) -- (1.8,1);
+\draw [thick] (0,1.4) ellipse (1.2 and 0.2);
+
+\draw[thick] (-1.2,1.4) -- (-1.2,0.6);
+\draw[thick] (1.2,1.4) -- (1.2,0.6);
+
+\node at (-1.6,0.2) {$(1)$};
+\node at (-1.6,1.6) {$(2)$};
+\draw  plot[smooth, tension=.7] coordinates {(1,0.8) (1.4,0.6) (1.8,0.6) (2.2,0.6)};
+\node at (2.6,0.6) [orange, scale=1.5] {$\sigma_f$};
+\end{tikzpicture}

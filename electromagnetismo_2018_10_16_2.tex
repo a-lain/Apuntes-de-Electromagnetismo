@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+
+
+\draw [->, dashed](-0.3,-1.8) -- (-0.3,2.7);
+\draw [<->, dashed](-1.8,-0.7) -- (-0.3,0.1) -- (1.4,0.1);
+\node at (-2,-0.8) {X};
+\node at (1.7,0.1) {Y};
+\node at (-0.3,2.9) {Z};
+
+
+\draw  [dashed,orange] (-0.3,0.9) ellipse (0.85 and 0.2);
+\draw  [dashed,orange] (-0.3,1.85) ellipse (0.4 and 0.15);
+\draw  [dashed,orange] (-0.3,-0.45) ellipse (0.45 and 0.1);
+\draw  [dashed,orange] (-0.3,-1.05) ellipse (1.2 and 0.15);
+
+\draw  plot[smooth, tension=.7] coordinates {(0.9,-1.05) (0.15,-0.45) (0.55,0.9) (0.1,1.85) (-0.3,2.25) (-0.7,1.85) (-1.15,0.9) (-0.75,-0.45) (-1.5,-1) (-1.2,-1.15) (-0.55,-1.2) (0.05,-1.2) (0.65,-1.15) (0.9,-1.05)};
+\end{tikzpicture}

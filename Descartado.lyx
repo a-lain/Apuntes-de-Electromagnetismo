@@ -1,0 +1,1263 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang spanish
+La integral del campo eléctrico a través de una línea cerrada es siempre
+ nulo, independientemente de la línea escogido o del campo eléctrico.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\oint_{L}\vec{E}\cdot d\vec{l}=\int_{\vec{R}_{1}}^{\vec{R}_{1}}\vec{E}\cdot d\vec{l}=\underbrace{\int_{\vec{R}_{1}}^{\vec{R}_{2}}\vec{E}\cdot d\vec{l}}_{\text{camino 1}}+\underbrace{\int_{\vec{R}_{2}}^{\vec{R}_{1}}\vec{E}\cdot d\vec{l}}_{\text{camino 2}}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+=\underbrace{\phi\left(\vec{R}_{1}\right)-\phi\left(\vec{R}_{2}\right)}_{\text{camino 1}}+\underbrace{\phi\left(\vec{R}_{2}\right)-\phi\left(\vec{R}_{1}\right)}_{\text{camino 2}}=0
+\]
+
+\end_inset
+
+
+\color red
+No sé qué es esto ni dónde ponerlo
+\end_layout
+
+\begin_layout Standard
+
+\color red
+\lang spanish
+Sabemos 
+\begin_inset Formula $\vec{\nabla}\cdot\vec{D}=\rho_{f}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\color red
+\lang spanish
+Si el medio es homogéneo e isótropo, se cumple:
+\end_layout
+
+\begin_layout Standard
+
+\color red
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{\nabla}\cdot\vec{E}=\rho_{f}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color red
+\lang spanish
+Se saca haciendo 
+\begin_inset Formula $\vec{D}=\varepsilon\vec{E}$
+\end_inset
+
+.
+ Escribir expresiones equivalentes para el potencial.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+En régimen estacionario de corrientes, para que sea 
+\begin_inset Formula $\vec{J}\neq\overrightarrow{\text{cte}}$
+\end_inset
+
+, la densidad de corriente eléctrica tiene fuentes vectoriales.
+ En otras palabras, en al menos algún punto 
+\begin_inset Formula $\vec{R}$
+\end_inset
+
+ debe ser el rotacional de 
+\begin_inset Formula $\vec{J}$
+\end_inset
+
+ no nulo para que sea 
+\begin_inset Formula $\vec{J}\neq\overrightarrow{\text{cte}}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\vec{\nabla}\times\vec{J}\left(\vec{R}\right)\neq\vec{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Por el corolario 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "cor:RegEstCorr J no fuentes escalares"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, en el caso de régimen estacionario de corrientes, se da:
+\begin_inset Formula 
+\[
+\vec{\nabla}\cdot\vec{J}\left(\vec{R}\right)=0\Leftrightarrow\frac{\partial J_{x}}{\partial x}+\frac{\partial J_{y}}{\partial y}+\frac{\partial J_{z}}{\partial z}=0
+\]
+
+\end_inset
+
+Si además, fuera:
+\begin_inset Formula 
+\[
+\vec{\nabla}\times\vec{J}\left(\vec{R}\right)=\vec{0}
+\]
+
+\end_inset
+
+entonces el campo 
+\begin_inset Formula $\vec{J}$
+\end_inset
+
+ sería conservativo y existiría una función escalar 
+\begin_inset Formula $\psi$
+\end_inset
+
+ tal que:
+\begin_inset Formula 
+\[
+\vec{J}=-\vec{\nabla}\psi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+d\left(\dbar W\right)=\vec{J}\cdot\vec{E}dVdt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+d\left(\dbar W\right)=dq\cdot\Delta\phi=\underbrace{\left(\vec{J}\cdot d\vec{S}\right)dt}_{dI\cdot dt}\vec{E}\cdot d\vec{l}=\vec{J}\cdot\vec{E}\underbrace{d\vec{S}\cdot d\vec{l}}_{=dV}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\dbar P=\frac{\dbar W}{dt}=\vec{J}\cdot\vec{E}dV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+P=\iiint_{V}\vec{J}\cdot\vec{E}dV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color green
+\lang spanish
+23/11/2018 Dibujo 3 (cilindro)
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\left\{ \begin{matrix}\vec{\nabla}\cdot\vec{B}=0\\
+\vec{\nabla}\times\vec{B}=\mu_{0}\vec{J}
+\end{matrix}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{B}=\vec{\nabla}\times\underbrace{\left[\frac{\mu_{0}}{4\pi}\iiint_{V'}\frac{\vec{J}\left(\vec{R}'\right)}{r}dV'\right]}_{:=\vec{A}}
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\vec{A}$
+\end_inset
+
+ es el potencial magnético vector.
+ Se cumple:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{\nabla}\cdot\left(\vec{\nabla}\times\vec{A}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{\nabla}\times\vec{\nabla}\times\vec{A}=\mu_{0}\vec{J}=\vec{\nabla}\left(\vec{\nabla}\cdot\vec{A}\right)-\nabla^{2}\vec{A}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Si imponemos 
+\begin_inset Formula $\vec{\nabla}\cdot\vec{A}=0$
+\end_inset
+
+, llegaríamos a:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\nabla^{2}\vec{A}=-\mu_{0}\vec{J}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Por ello, definimos el momento dipolar magnético como:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{m}:=\lim_{\begin{matrix}\left|\vec{S}\right|\rightarrow0\\
+I\rightarrow\infty
+\end{matrix}}I\vec{S}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+(definir mejor en forma de cociente).
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{m}=I\vec{S}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{M}\left(\vec{R}'\right)=\frac{d\vec{m}}{dV'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{A}\left(\vec{R}\right)=\frac{\mu_{0}}{4\pi}\left[\iint_{S'}\frac{\overbrace{\vec{M}\left(\vec{R}\right)\times\hat{n}}^{=\vec{J}_{S,m}}}{r}dS'+\iiint_{V}\frac{\overbrace{\vec{\nabla}\times\vec{M}\left(\vec{R}\right)}^{=\vec{J}_{m}}}{r}dV'\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color green
+\lang spanish
+11/12/2018 Dibujo 1 (Superficie abierta)
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{m}=\alpha_{m}\vec{B}_{\text{local}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{M}=N\alpha_{m}\vec{B}_{\text{local}}=N\alpha_{m}\left(\vec{B}+\mu_{0}\left(\gamma-1\right)\vec{M}\right)=\frac{N\alpha_{m}}{1-\mu_{0}\left(\gamma-1\right)N\alpha_{m}}\vec{B}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Vemos que hay cierta analogía con corrientes estacionarias:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\begin{matrix}{\displaystyle \vec{\nabla}\cdot\vec{B}=\vec{0}} &  & {\displaystyle \oint_{C}\vec{H}\cdot d\vec{l}=I} &  & {\displaystyle \vec{B}=\mu\vec{H}}\\
+{\displaystyle \vec{\nabla}\cdot\vec{J}=\vec{0}} &  & {\displaystyle \oint_{C}\vec{E}\cdot d\vec{l}=\varepsilon} &  & {\displaystyle \vec{J}=\sigma\vec{E}}
+\end{matrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color green
+\lang spanish
+12/12/2018 Dibujo 5 (dos circuitos magnéticos)
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Nótese que si 
+\begin_inset Formula $\vec{H}=\vec{H}_{c}+\vec{H}_{m}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\oint_{C}\vec{H}\cdot d\vec{l}=\oint_{C}\vec{H}_{c}\cdot d\vec{l}+\underbrace{\oint_{C}\vec{H}_{m}\cdot d\vec{l}}_{=0}
+\]
+
+\end_inset
+
+El segundo término se anula porque 
+\begin_inset Formula $\exists\psi\left(\vec{r}\right)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\vec{H}_{m}=-\vec{\nabla}\psi$
+\end_inset
+
+, es decir, porque 
+\begin_inset Formula $\vec{H}_{m}$
+\end_inset
+
+ es conservativo.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Recordemos que, en corrientes estacionarias era:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{\nabla}\cdot\vec{J}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Mencionamos la experiencia de Oërsted en 1819.
+\end_layout
+
+\begin_layout Standard
+
+\color green
+\lang spanish
+14/12/2018 Dibujo 1 (corriente con 
+\begin_inset Formula $B$
+\end_inset
+
+ variable)
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\left(=I\cdot R\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Tenemos dos espiras atravesadas por un campo magnético variable en el tiempo.
+\end_layout
+
+\begin_layout Standard
+
+\color green
+\lang spanish
+14/12/2018 Dibujo 3 (dos espiras con 
+\begin_inset Formula $B$
+\end_inset
+
+ variable)
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+que es la tercera ecuación de Maxwell.
+ Ya hemos visto las dos primeras:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{\nabla}\cdot\vec{E}\left(\vec{R},t\right)=\frac{\rho_{\text{total}}\left(\vec{R},t\right)}{\varepsilon_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{\nabla}\cdot\vec{B}\left(\vec{R},t\right)=0
+\]
+
+\end_inset
+
+Y únicamente nos queda la cuarta ecuación de Maxwell.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Para medios l.h.i.
+\end_layout
+
+\begin_layout Standard
+
+\color green
+\lang spanish
+18/12/2018 Dibujo 3 (Tío sentado en el coche del AVE)
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{J}=\rho\left\langle \vec{v}\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{f}=\rho\vec{E}+\vec{J}\times\vec{B}=\rho\left(\vec{E}+\left\langle \vec{v}\right\rangle \times\vec{B}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename /home/andres/Drive Universidad/Universidad/2º Curso/1er cuatrimestre/Electromagnetismo/Teoría/electromagnetismo_2018_12_18_4.pdf
+	lyxscale 250
+	width 30line%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+El circuito RL
+\end_layout
+
+\begin_layout Standard
+
+\color green
+\lang spanish
+18/12/2018 Dibujo 5 (Circuito RL)
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+V_{L}=L\frac{dI}{dt}=\frac{d}{dt}\left(LI\right)=\frac{d\Phi}{dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\varepsilon-\frac{d\Phi}{dt}=IR
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color green
+\lang spanish
+20/12/2018 Dibujo 2 (Corriente lineal)
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Lo anterior es para el caso en el que nada depende del tiempo.
+ Ahora, queremos ver cómo cambian estas ecuaciones cuando las magnitudes
+ involucradas dependen del tiempo.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\begin{matrix}{\displaystyle \vec{\nabla}\cdot\vec{E}=\frac{\rho\left(\vec{R},t\right)}{\varepsilon_{0}}} &  & \vec{\nabla}\cdot\vec{B}\left(\vec{R},t\right)=0\\
+{\displaystyle \vec{\nabla}\times\vec{E}\left(\vec{R},t\right)=-\frac{\partial\vec{B}\left(\vec{R},t\right)}{\partial t}} &  & \text{¿?}
+\end{matrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Únicamente desconocemos cómo queda la última ecuación.
+ Nótese que aplicando la identidad vectorial 
+\begin_inset Formula $7$
+\end_inset
+
+ llegaríamos a la siguiente contradicción si supusiéramos que la fórmula
+ en el caso estacionario fuese cierta.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{\nabla}\cdot\left(\vec{\nabla}\times\vec{A}\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\underbrace{\vec{\nabla}\cdot\left(\vec{\nabla}\times\vec{H}\right)}_{=0}=\underbrace{\vec{\nabla}\cdot\vec{J}}_{\neq0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Consideremos el circuito RC:
+\end_layout
+
+\begin_layout Standard
+
+\color green
+\lang spanish
+20/12/2018 Dibujo 3 (Circuito RC)
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\oint_{C}\vec{H}\cdot d\vec{l}=I
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\iint_{\text{superficie cáscara}}\vec{J}\cdot d\vec{S}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+La condición de Coulomb es la siguiente:
+\begin_inset Formula 
+\[
+\vec{\nabla}\cdot\vec{A}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Esta condición se utiliza para potenciales retardados (problemas de radiación).
+\begin_inset Formula 
+\[
+\nabla^{2}\phi\left(\vec{R},t\right)=-\frac{\rho\left(\vec{R},t\right)}{\varepsilon}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{matrix}{\displaystyle v=\frac{1}{\sqrt{\varepsilon\mu}}} &  & {\displaystyle t=t'+\frac{r}{v}}\end{matrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\phi\left(\vec{R},t\right)=\frac{1}{4\pi\varepsilon}\iiint_{V'}\frac{\rho\left(\vec{R}',t'\right)}{r}dV'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\phi\left(\vec{R},t\right)=\frac{1}{4\pi\varepsilon}\iiint_{V'}\frac{\rho\left(\vec{R}',t-\frac{r}{v}\right)}{r}dV'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{A}\left(\vec{R},t\right)=\frac{\mu}{4\pi}\iiint_{V'}\frac{J\left(\vec{R}',t-\frac{r}{v}\right)}{r}dV'
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\lang spanish
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+De esta forma, sabemos que podemos expresar nuestra solución de la siguiente
+ forma:
+\begin_inset Formula 
+\[
+E_{x}\left(x,y,z\right)=\left(A_{x}e^{\alpha x}+B_{x}e^{-\alpha x}\right)\left(A_{y}e^{\beta y}+B_{y}e^{-\beta y}\right)\left(A_{z}e^{\gamma z}+B_{z}e^{-\gamma z}\right)
+\]
+
+\end_inset
+
+para algunos 
+\begin_inset Formula $\alpha,\beta,\gamma\in\mathbb{C}$
+\end_inset
+
+.
+ Nótese que:
+\begin_inset Formula 
+\[
+\frac{\partial^{2}E_{x}}{\partial x^{2}}=\left(A_{x}\alpha^{2}e^{\alpha x}+B_{x}\alpha^{2}e^{-\alpha x}\right)YZ=\alpha^{2}XYZ
+\]
+
+\end_inset
+
+Así, sustituyendo en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "eq:Laplaciana + k^2Ex"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, obtenemos:
+\begin_inset Formula 
+\[
+\left(\alpha^{2}+\beta^{2}+\gamma^{2}\right)XYZ+k^{2}XYZ=0\Leftrightarrow\alpha^{2}+\beta^{2}+\gamma^{2}+k^{2}=0
+\]
+
+\end_inset
+
+Una solución de la ecuación anterior es tomar 
+\begin_inset Formula $\vec{k}=\left(-i\alpha,-i\beta,-i\gamma\right)=\left(k_{x},k_{y},k_{z}\right)$
+\end_inset
+
+, obteniendo:
+\begin_inset Formula 
+\[
+\alpha^{2}+\beta^{2}+\gamma^{2}-\alpha^{2}-\beta^{2}-\gamma^{2}=0
+\]
+
+\end_inset
+
+De esta forma, la solución general quedaría:
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+Para calcular las 
+\begin_inset Formula $C$
+\end_inset
+
+, tenemos las ecuaciones:
+\begin_inset Formula 
+\begin{equation}
+\left\{ \begin{matrix}C_{z}^{2}=k^{2}-C_{x}^{2}-C_{y}^{2}\\
+\\
+{\displaystyle C_{y}^{2}=\frac{d^{2}Z}{dz^{2}}\frac{1}{Z}+k^{2}-C_{x}^{2}}\\
+\\
+{\displaystyle C_{x}^{2}=\frac{d^{2}Y}{dy^{2}}\frac{1}{Y}+\frac{d^{2}Z}{dz^{2}}\frac{1}{Z}+k^{2}}
+\end{matrix}\right.\label{eq:Cx,Cy,Cz}
+\end{equation}
+
+\end_inset
+
+Nótese que:
+\begin_inset Formula 
+\[
+\frac{dZ}{dz}=iA_{z}C_{z}e^{iC_{z}z}-iB_{z}C_{z}e^{-iC_{z}z}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{d^{2}Z}{dz^{2}}=-A_{z}C_{z}^{2}e^{iC_{z}z}-B_{z}C_{z}^{2}e^{-iC_{z}z}
+\]
+
+\end_inset
+
+Como las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "eq:Cx,Cy,Cz"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, deben cumplirse para cualquier valor de 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+, podemos escoger 
+\begin_inset Formula $x=y=z=0$
+\end_inset
+
+.
+ Así tenemos:
+\begin_inset Formula 
+\[
+\left(\frac{d^{2}Z}{dz^{2}}\frac{1}{Z}\right)\left(0\right)=\frac{-A_{z}C_{z}^{2}-B_{z}C_{z}^{2}}{A_{z}+B_{z}}=-C_{z}^{2}
+\]
+
+\end_inset
+
+Así, haciendo los cálculos análogos para 
+\begin_inset Formula $Y$
+\end_inset
+
+ y 
+\begin_inset Formula $X$
+\end_inset
+
+, las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "eq:Cx,Cy,Cz"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se transforman en:
+\begin_inset Formula 
+\[
+\left\{ \begin{matrix}C_{z}^{2}=k^{2}-C_{x}^{2}-C_{y}^{2}\\
+\\
+{\displaystyle C_{y}^{2}=-C_{z}^{2}+k^{2}-C_{x}^{2}}\\
+\\
+{\displaystyle C_{x}^{2}=-C_{y}^{2}+\frac{d^{2}Z}{dz^{2}}\frac{1}{Z}+k^{2}}
+\end{matrix}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\lang spanish
+Sabemos que existen 
+\begin_inset Formula $D_{x},D_{y},D_{z},\varphi_{x},\varphi_{y},\varphi_{z}\in\mathbb{C}$
+\end_inset
+
+ que permiten 
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+ como:
+\begin_inset Formula 
+\[
+X\left(x\right)=D_{x}e^{iC_{x}t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{E}\left(\vec{R},t\right)=\vec{E}\left(\vec{R}\right)e^{-i\omega t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\vec{E}\left(\vec{R}\right)=\vec{E}_{0}e^{\pm i\vec{k}\cdot\vec{R}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{E}\left(\vec{R},t\right)=\vec{E}_{0}e^{-i\left(\omega t\pm\vec{k}\cdot\vec{R}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\vec{F}=q\cdot\vec{E}=qE_{0}\cos\left(\omega t-\vec{k}\cdot\vec{R}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Seguimos con la resolución de la ecuación de ondas.
+\begin_inset Formula 
+\[
+k^{2}=\omega^{2}\varepsilon\mu+i\omega\mu\sigma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Si tomamos 
+\begin_inset Formula $\vec{k}=\left(0,0,k\right)$
+\end_inset
+
+, entonces es:
+\begin_inset Formula 
+\[
+\vec{E}\left(\vec{R},t\right)=E_{0}e^{i\left(\omega t-kz\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color green
+\lang spanish
+11/01/2018 Dibujo 1(onda propagándose en el eje 
+\begin_inset Formula $z$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Hallemos el valor de 
+\begin_inset Formula $k$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+k=\alpha+i\beta\Rightarrow k^{2}=\alpha^{2}-\beta^{2}+i2\alpha\beta
+\]
+
+\end_inset
+
+Así, llegamos al sistema de ecuaciones:
+\begin_inset Formula 
+\[
+\left\{ \begin{matrix}\alpha^{2}-\beta^{2}=\omega^{2}\varepsilon\mu\\
+2\alpha\beta=\omega\sigma
+\end{matrix}\right.
+\]
+
+\end_inset
+
+Despejando, llegamos a:
+\begin_inset Formula 
+\[
+\alpha=\omega\sqrt{\frac{\mu\varepsilon}{2}\left(\sqrt{1+\left(\frac{\sigma}{\varepsilon\Omega}\right)^{2}}+1\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Formula 
+\[
+\beta=\omega\sqrt{\frac{\mu\varepsilon}{2}\left(\sqrt{1+\left(\frac{\sigma}{\varepsilon\Omega}\right)^{2}}-1\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color green
+\lang spanish
+11/01/2018 Dibujo 2(propagación de onda entre medio dieléctrico y medio
+ conductor)
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Llamamos distancia de penetración 
+\begin_inset Formula $\delta$
+\end_inset
+
+ a la inversa de 
+\begin_inset Formula $\beta$
+\end_inset
+
+, que es la distancia que ha penetrado la onda en el conductor en la cual
+ la amplitud de la onda es 
+\begin_inset Formula $\frac{E_{0}}{e}$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

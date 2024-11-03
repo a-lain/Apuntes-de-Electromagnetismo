@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+
+\draw [<-, thick, dashed, pink](-1,3) -- (-1,-0.5);
+\draw [<->, dashed, pink](-2,0.5) -- (-1,1) node (v1) {} -- (0.5,1);
+\draw  (v1) ellipse (0.9 and 0.3);
+\draw [red](v1.center) -- (-1.9,1) node [midway, above]{$R_0$};
+\draw [very thick, orange] plot[smooth, tension=.7] coordinates {(-0.7269,0.7172) (-0.5919,0.7356) (-0.4999,0.754)};
+\node at (-0.5796,0.6006) [orange, below] {$dl$};
+\node at (-2.2361,0.5945) [pink]{X};
+\node at (0.6385,1.1527) [pink]{Y};
+\node at (-1.1835,3.1405) [pink]{Z};
+\draw [->, blue](v1.center) -- (0.0896,2.4779) node [midway, left]{$\vec{R}$};
+\end{tikzpicture}

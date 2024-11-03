@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+
+\draw [thick] (0,0.5) node (v1) {} ellipse (1.5 and 0.5);
+\draw [dashed] (0,4) -- (0,-2.5);
+\draw [thick, blue,->] (0,3.5) -- (v1.center) -- (-4.5,0.5);
+\draw (0,3) -- (0,2)[thick, blue,->];
+\draw (-2,0.5) -- (-3,0.5)[thick, blue,->];
+\node at (0.5,2.5)[blue] {$I$};
+\draw [->, thick] plot[smooth, tension=.7] coordinates {(-0.3951,0.0165) (-0.0313,-0.0049) (0.3325,0.0058)};
+\draw  [->, thick] plot[smooth, tension=.7] coordinates {(0.6964,0.9368) (0.4181,0.9689) (0.1185,0.9903)};
+\draw  [->, thick]  plot[smooth, tension=.7] coordinates {(-1.2191,0.7869) (-1.401,0.6799) (-1.4866,0.5729)};
+\node at (-0.3309,3.9544) {Z};
+\draw [fill] (-0.0099,-1.4575) circle (0.05);
+\node at (0.6,-1.7465) {$(0,0,-z)$};
+\end{tikzpicture}

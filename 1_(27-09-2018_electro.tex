@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+
+\draw (0,0) node (v4) {} -- (0,4) node (v1) {} -- (4,4) node (v8) {} -- (4,0) node (v5) {} -- (0,0);
+\draw (1,0.8) node (v3) {} -- (4.8,0.8) node (v6) {} -- (4.8,4.8) node (v7) {} -- (1,4.8) node (v2) {} -- (0,4);
+\draw (1,4.8) -- (1,0.8) -- (0,0) -- (4,0) -- (4.8,0.8) -- (4.8,4.8) -- (4,4);
+\draw (v2);
+\draw [<->, dashed, ultra thick](1,6.1) -- (1,0.8) -- (6.5,0.8);
+\draw [->, dashed, ultra thick](1,0.8) -- (-0.9,-0.8);
+
+\node at (1,6.5) {$Z$};
+\node [right] at (-1.5,-1) {$X$};
+\node [above left] at (7.5,0.5) {$Y$};
+\draw [->,very thick,orange] (4.5,2.3) -- (7,2.3) node [black, midway, above=3] {$(0,dS,0)$};
+\end{tikzpicture}

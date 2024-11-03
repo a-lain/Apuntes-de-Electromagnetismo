@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+
+\fill  (-3.7,3.7) circle (0.4) node [white] (v4) {$q_1$};
+\fill  (-5.1,-0.4) circle (0.4) node [white] (v2) {$q_2$};
+\fill  (0.1,2.7) circle (0.4) node [white] (v5) {$q_3$};
+\fill  (0.7,-2.7) circle (0.4) node [white] (v3) {$q_0$};
+\draw [blue,->] (6.3,-0.3) node (v1) {} -- (5,-1.7) node [near end,below] {X};
+\draw [blue,->] (v1.center) -- (8.7,-0.3) node [near end,below] {Y};
+\draw [blue,->] (v1.center) -- (6.3,2.1) node [near end,left] {Z};
+\node at (-3.7,4.5) [green] {$(x_1',y_1',z_1')$};
+\node at (-5.2,0.5) [green] {$(x_2',y_2',z_2')$};
+\node at (0.2,3.7) [green] {$(x_3',y_3',z_3')$};
+\node at (0.2,-3.5) [green] {$(x,y,z)$};
+\draw [red,->] (v2.center) -- (v3.center) node [midway,above] {$\vec{r}_{20}$};
+\draw [red,->] (v4.center) -- (v3.center) node [midway,right] {$\vec{r}_{10}$};
+\draw [red,->] (v5.center) -- (v3.center) node [midway,right] {$\vec{r}_{30}$};
+\draw [orange,->] (v3.center) -- (1.6,-3.8) node [near end,right] {$\hat{r}_{10}$};
+\end{tikzpicture}

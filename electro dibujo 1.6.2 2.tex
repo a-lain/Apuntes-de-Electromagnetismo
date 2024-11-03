@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+
+\draw  plot[smooth, tension=.7] coordinates {(-2,2.5) (-3.5,-0.5) (-1,-2.5) (1.5,-4.5) (4,-2) (4,3)};
+\draw  plot[smooth, tension=.7] coordinates {(4,3)};
+\draw  plot[smooth, tension=.7] coordinates {(4,3) (2.5,4) (0.5,4.5) (-2,2.5)};
+\draw [<->, blue, thick](-6.5,-4) -- (-6.5,-6.5) node (v1) {} -- (-4,-6.5);
+\draw [->, blue, thick] (v1.center) -- (-7.5,-7.5);
+
+\draw  (0.2,2.4) node (v3) {} rectangle (1.2,1.4) node (v5) {};
+\draw  (0.4,2.6) node (v2) {} rectangle (1.4,1.6) node (v4) {};
+\draw (0.4,1.6) -- (0.2,1.4);
+\draw (1.4,2.6) -- (1.2,2.4);
+\draw (v2.center) -- (v3.center);
+\draw (v4.center) -- (v5.center);
+\draw [fill,opacity=0.6] (5.3,-4.7) circle (0.2);
+\draw [->, thick, red] (v1.center) -- (0.7,1.9) node (v6) {};
+\draw [->, thick, purple] (v6.center) -- (5.3,-4.7) node (v7) {};
+\draw [->, thick, red] (v1.center) -- (v7.center);
+\node [scale=2] at (2.2,2) {$dV'$};
+\node [scale=2] at (-3.7,-2.4) [red] {$\vec{R'}$};
+\node at (0.8,-6) [red,scale=2]{{$\vec{R}$}};
+\node at (3,-0.8) [purpl,scale=2]{{$\vec{r}$}};
+\node at (-1.8,3.4) [scale=2]{{$Q'$}};
+
+\end{tikzpicture}

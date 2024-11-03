@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+\draw  [fill, orange](0,0) circle (2);
+\draw [fill, white] (0,0) node (v1) {} circle (0.5);
+
+\draw  plot[smooth, tension=.7] coordinates {(1.4,-1.4) (1.6,-1.5) (1.6,-1.7)};
+\draw  (1.3,-1.7) rectangle (2,-1.9);
+\node at (1.6,-2.2) {$\phi=0$};
+\node at (0.2,0.1) {$q$};
+\node at (-0.6,0.4) {$-$};
+\node at (-0.6,-0.5) {$-$};
+\node at (0.2,-0.7) {$-$};
+\node at (0.7,-0.1) {$-$};
+\node at (0.4,0.6) {$-$};
+\node at (2.2,1.6) {$E=0$};
+\draw [fill, red] (v1) circle (0.1);
+\end{tikzpicture}

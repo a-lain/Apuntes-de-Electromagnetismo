@@ -1,0 +1,5 @@
+\begin{tikzpicture}
+\draw  plot[smooth, tension=.7] coordinates {(1.5,3.5) (0.5,3) (1,2) (3,2) (2.5,3.5) (1.5,3.5)};
+\draw[very thick, ->, purple] (1.4165,3.4771) node (v1) {} -- (2.0723,3.6354) node[midway, above]{$I$};
+\draw [->, thick, orange](v1.center) -- (4,2.5)node[near end, above]{$\vec{r}$};
+\end{tikzpicture}

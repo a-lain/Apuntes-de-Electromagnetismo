@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+
+\draw  plot[smooth, tension=.7] coordinates {(-1.5,1) (-2,0) (-1,-1) (0,-0.5) (0.5,2) (-1.5,1)};
+\draw  plot[smooth, tension=.7] coordinates {(3.5,0) (2.5,0) (2.5,-1.5) (3.5,-2.5) (5,-1.5) (5.5,0) (3.5,0)};
+\node at (0.9611,1.317)[blue] {$dl_1$};
+\draw [very thick, blue, |-|](0.5278,1.1418) -- (0.5739,1.4553);
+\node [blue] at (2.6854,-0.9298) {$dl_2$};
+\draw [very thick, blue, |-|](2.3811,-1.1081) -- (2.335,-0.7301);
+\draw [very thick, purple, ->](-1.3072,1.1234) -- (-0.5787,1.6121) node [midway,above left]{$I_1$};
+\node at (0.3618,2.2576) {$C_1$};
+\draw [very thick, purple, ->](3.9119,0.0816) -- (4.8893,0.1554) node [midway,above left]{$I_2$};
+\node at (5.3779,0.6163) {$C_2$};
+\draw [->, thick, brown](0.5462,1.3093) -- (2.2705,-0.9313) node [midway, below left]{$\vec{r}_{12}$};
+\end{tikzpicture}

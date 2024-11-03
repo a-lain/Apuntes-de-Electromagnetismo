@@ -1,0 +1,43 @@
+\begin{tikzpicture}
+
+\draw  (-1.25,0.3) ellipse (0.35 and 0.09);
+\draw [fill, white] (-1.6233,0.2702) rectangle (-0.9795,0.0606);
+\draw  (-1.3,0.1) ellipse (0.35 and 0.09);
+\draw [fill, white] (-1.6114,0.1028) rectangle (-1.0097,-0.1334);
+\draw  (-1.3,-0.1) ellipse (0.35 and 0.09);
+\draw [fill, white] (-1.61,-0.104) rectangle (-0.967,-0.37);
+\draw  (-1.25,-0.3) ellipse (0.35 and 0.09);
+\draw [fill, white] (-1.5727,-0.3444) rectangle (-0.9367,-0.5054);
+
+\draw  (0,0) node (v1) {} circle (1);
+\draw  (v1) circle (1.6);
+
+\draw (-2.4,0.3) -- (-1.6,0.3);
+\draw (-1.5,-0.5) -- (-2.4,-0.5);
+\node at (-1.9,-0.1) {$n$};
+\node at (-2.3,0.6) {$I$};
+\draw[->, thick] (-2.5,0.3) -- (-2.2,0.3);
+\draw [dashed, teal] (v1) circle (1.3);
+\draw [->, thick, blue] (-0.9959,0.8356) arc (140.002:120:1.3);
+\draw[->, thick, blue]  (0.9959,-0.8356) arc (-39.998:-60:1.3);
+
+%segundo dibujo
+\draw  (3.6,0.2) ellipse (0.35 and 0.09);
+\draw [fill, white] (3.235,0.17) rectangle (3.8944,0.0006);
+\draw  (3.6,0) ellipse (0.35 and 0.09);
+\draw [fill, white] (3.3026,-0.0006) rectangle (3.8826,-0.2832);
+\draw  (3.6,-0.2) ellipse (0.35 and 0.09);
+\draw [fill, white] (3.282,-0.1988) rectangle (3.8864,-0.4432);
+\draw  (3.6,-0.4) ellipse (0.35 and 0.09);
+\draw [fill, white] (3.285,-0.385) rectangle (3.8814,-0.6244);
+\draw  (3.3,1.1) rectangle (6,-1.6);
+\draw  (3.9,0.5) rectangle (5.4,-1);
+\draw  [dashed, teal](3.6,0.8) rectangle (5.7,-1.3);
+\draw (2.7,0.2) -- (3.2526,0.2019);
+\draw (2.7,-0.6) -- (3.2964,-0.6043);
+\draw [thick,->] (2.5,0.2) -- (2.8,0.2);
+\node at (2.6,0.4) {$I$};
+\node at (3,-0.2) {$n$};
+\draw [very thick, ->, blue] (4.4,0.8) -- (4.9,0.8);
+\draw [very thick, <-, blue] (4.4,-1.3) -- (4.9,-1.3);
+\end{tikzpicture}

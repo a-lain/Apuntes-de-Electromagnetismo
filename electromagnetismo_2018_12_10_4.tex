@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+\draw  (0,2.5) ellipse (1.5 and 0.45);
+\draw  [fill, white](-3,3) rectangle (3,2.5);
+\draw  (0,1.5) ellipse (2.27 and 0.45);
+\draw  [fill, white](-3,2) rectangle (3,1.5);
+\draw  (0,0.5) ellipse (2.5 and 0.45);
+\draw  [fill, white](-3,1) rectangle (3,0.5);
+\draw  (0,-0.5) ellipse (2.27 and 0.45);
+\draw  [fill, white](-3,0) rectangle (3,-0.5);
+\draw  (0,0.5) circle (2.5);
+\node at (0.5,2.5) [scale=1.5]{$\vec{M}$};
+\node at (-2.5,-1) [scale=1.5]{$V'$};
+\draw  [purple,->, very thick]plot[smooth, tension=.7] coordinates {(-0.25,1.0537) (0.144,1.0537) (0.7745,1.0853)};
+\node [purple,scale=1.5] at (0.5,1.5) {$\vec{J}$};
+\draw [dashed]  (7.5,0.5) circle (2.5);
+\node at (8,-0.5) [scale=2] {$\vec{J}$};
+\node at (7,1.5) [scale=2]{$\vec{J}_m$};
+\node at (9,3) [scale=2]{$\vec{J}_{sm}$};
+\end{tikzpicture}

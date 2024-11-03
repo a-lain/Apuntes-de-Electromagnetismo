@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+
+\draw [thick]  (-2,0.5) ellipse (0.5 and 1);
+\draw [dashed](-3,0.5) -- (1,0.5) node (v1) {};
+\draw [->, thick](0,0.5) node (v2) {} -- (v1.center);
+\draw  [->,very thick]plot[smooth, tension=.7] coordinates {(-1.5098,0.2428) (-1.4985,0.4916) (-1.5211,0.7742)};
+\draw  [->,very thick]plot[smooth, tension=.7] coordinates {(-2.4708,0.842) (-2.4934,0.5933) (-2.4821,0.2428)};
+\draw  [fill](v2) circle (0.0678);
+\draw [->, thick](3.5,0.5) -- (10.7,0.5);
+\draw [dashed](4.5,3.5) node (v5) {} -- (9,0.5) node (v3) {};
+\draw [->](9,0.5) -- (10,1.5);
+\draw [->, dashed] (v3.center) -- (9,1.5);
+\draw [dashed](4.5,-2.5) node (v4) {} -- (9,0.5) node (v3) {};
+\draw [->](9,0.5) -- (10,-0.5);
+\draw [->, dashed] (v3.center) -- (9,-0.5);
+\draw (9.8,0.5) arc (0:46.8:0.8) node[midway, right]{$\theta$};
+\draw (9.6998,0.4853) arc (-1.2034:-46.8:0.7)node[midway, right]{$\theta$};
+\draw (8,0.5) arc (180:145.2:1)node[midway, left]{$\alpha$};
+\draw (8.0967,-0.1278) arc (-145.2004:-178.8:1.1)node[midway, left]{$\alpha$};
+\node at (10.9,0.4) {Z};
+\draw [fill]  (v4) circle (0.1);
+\draw [fill] (v5) circle (0.1);
+\end{tikzpicture}

@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+\draw  plot[smooth, tension=.7] coordinates {(2.5,5) (1.5,3.5) (2.5,1.5) (5,2.5) (5,5) (3.5,5.5) (2.5,5)};
+\node at (2.5,5.5) {$V'$};
+
+\draw  [rotate=20](4.291,3.0706) ellipse (0.3 and 0.1);
+\draw  (3.7,3.8) ellipse (0.3 and 0.1);
+\draw  [rotate=-20](3.1076,5.1623) ellipse (0.3 and 0.1);
+\draw  (3.9,5) ellipse (0.3 and 0.1);
+\draw [->,rotate=20](4.291,2.7706) -- (4.291,3.3706);
+\draw [<-](3.7,3.5) -- (3.7,4.1);
+\draw [->,rotate=-20](3.1076,4.8623) -- (3.1076,5.4623);
+\draw [->](3.9,4.7) -- (3.9,5.3);
+\draw [<->, thick](-1,1.5) -- (-1,-1) node (v1) {} -- (1.5,-1);
+\draw [->, thick](v1.center) -- (-2,-2);
+\draw [->, green] (v1.center) -- (2.7846,2.9765) node [midway,above left]{$\vec{R}'$};
+\draw [->, orange](v1.center) -- (4.1,0.8) node [midway,below]{$\vec{R}$};
+\draw [->, blue](2.8,3) -- (4.1,0.8) node [midway,above]{$\vec{r}$};
+\draw  (2.7066,3.162) node (v4) {} rectangle (2.9942,2.8744) node (v2) {};
+\draw  (2.8384,3.2219) node (v5) {} rectangle (3.102,2.9583) node (v3) {};
+\draw (v2.center) -- (v3.center);
+\draw (2.7063,2.8652) -- (2.8486,2.9701);
+\draw (2.9835,3.1574) -- (3.0884,3.2249);
+\draw (v4.center) -- (v5.center);
+\end{tikzpicture}
